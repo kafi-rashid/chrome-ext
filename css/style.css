@@ -1,0 +1,29 @@
+:root {
+  --red: #F38181;
+  --white: #ffffff;
+  --black: #333333;
+}
+
+body {
+  background: linear-gradient(271deg, #ff944b, #2a9900);
+  background-size: 400% 400%;
+  animation: bderl 29s ease infinite;
+}
+
+.bderl_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--white);
+  padding-top: 50px;
+}
+
+.bderl_caro {
+  padding-top: 100px;
+}
+
+@keyframes bderl {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

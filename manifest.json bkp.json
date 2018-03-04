@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "BDERL",
+	"description": "Bangladesh Digital Education Research, Limited",
+	"version": "1",
+	"author": "Mohammad Ali",
+	"browser_action": {
+		"default_icon": "tab-icon.png",
+		"default_title": "BDERL"
+	},
+	"chrome_url_overrides" : {
+		"newtab": "newtab.html"
+	},
+	"permissions": [
+		"https://*.gstatic.com/*",
+		"activeTab"
+	],
+	"optional_permissions": [
+		"origin"
+	],
+	"content_scripts": [
+    {
+      "js": ["https://www.gstatic.com/firebasejs/4.10.1/firebase.js"]
+    }
+  	]
+}
