@@ -1,3 +1,4 @@
+// Initialize Firebase
 var config = {
 	apiKey: "AIzaSyA0QmHJmIpn3T9hDZJNwnHCr4fma6SBrVQ",
 	authDomain: "bderl-f3a4b.firebaseapp.com",
@@ -10,4 +11,5 @@ firebase.initializeApp(config);
 
 var cat = document.getElementById('test_firebase');
 var dbRef = firebase.database().ref().child('name');
+
 dbRef.on('value', snap => test_firebase.innerText = snap.val());
