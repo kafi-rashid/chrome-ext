@@ -27,11 +27,12 @@ jQuery(document).ready(function(){
 	$('#header-now').text( weekday[d.getDay()] + ', ' + d.getMonthName() + ' ' + d.getDate()  + ', ' + d.getFullYear() );
 });
 
-$(window).on('load', function() {
-	var colorThief = new ColorThief();
-	$('.color-source').each(function() {
-		let that = $(this);
-		let color = colorThief.getColor($(this)[0]);
-		that.closest('.item').find('.foreground').css('background-color', 'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', 0.6)');
-	});
-});
+// $(window).on('load', function() {
+// 	var colorThief = new ColorThief();
+// 	$('.color-source').each(function() {
+// 		let that = $(this);
+// 		that.attr('crossOrigin', '');
+// 		let color = colorThief.getColor($(this)[0]);
+// 		that.closest('.item').find('.foreground').css('background-color', 'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', 0.6)');
+// 	});
+// });
